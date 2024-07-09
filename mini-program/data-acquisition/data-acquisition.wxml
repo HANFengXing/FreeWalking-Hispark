@@ -1,0 +1,14 @@
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <image class="background-image" src="https://pic4.zhimg.com/50/v2-eeaa81ce57df4ff4f560915169d8b7f1_hd.jpg?source=1940ef5c" mode="aspectFill"></image>
+  
+  <text class="title">欢迎来到识别障碍模式</text>
+  <text class="result">{{result}}</text>
+  <!-- <button class="primary-button" bindtap="touchBtn_gettoken">获取token</button> -->
+  <button class="default-button" bindtap="touchBtn_getshadow">单点自控</button>
+  <button class="selectmode-button" bindtap="select_mode">模式选择</button>
+  <input class="input-box" type="number" placeholder="请输入想要的大于3000的延时值" bindinput="onInputValue" />
+  <button class="startwork-button" bindtap="start_work">开始识别</button>
+  <button class="endwork-button" bindtap="end_work">结束识别</button>
+</view>
+

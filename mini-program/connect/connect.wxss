@@ -1,0 +1,54 @@
+.container {
+  width: 100vm;
+  margin: 120rpx 30rpx;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* 将图片置于其他元素之下 */
+}
+
+.start,.end,.go,.phone {
+  display: flex;
+  width: 100%;
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 4rpx solid gainsboro;
+  margin: 30rpx auto;
+  text-align: center;
+  justify-content: space-between
+}
+
+.startTitleP ,.endTitleP,.radio-group{
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: right;
+  float: right;
+  color: grey;
+  margin: 10rpx 20rpx;
+}
+.endTitleP{
+  color: blue !important
+}
+.radio{
+  display: flex;
+  justify-content: space-between;
+  float: right;
+  margin: 0rpx 10rpx;
+}
+.selectColor{
+  color: goldenrod
+}
+.btn{
+  margin: 50rpx auto;
+  background-color: skyblue;
+
+}
+.tel{
+  color: blue;
+  float: right;
+}

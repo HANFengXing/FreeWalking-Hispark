@@ -1,0 +1,32 @@
+<view class="container">
+  <image class="background-image" src="https://pic4.zhimg.com/50/v2-eeaa81ce57df4ff4f560915169d8b7f1_hd.jpg?source=1940ef5c" mode="aspectFill"></image>
+  <form class="form" bindsubmit="_handleSubmit">
+  <view class="phone">
+  <text >联系电话：</text><text class="tel">17727420103</text>
+  </view>
+    <view class="start">
+      <text class="startTitle">起点位置：</text>
+      <input placeholder="获取起点 ＞" name="start" bindtap="_pickStartAddress" class="startTitleP" disabled value="{{startAddressInfo.name}}"></input>
+    </view>
+    <view class="end">
+      <text class="endTitle">终点位置：</text>
+      <input placeholder="获取终点 ＞" name="end" bindtap="_pickEndAddress" class="endTitleP" disabled value="{{endAddressInfo.name}}"></input>
+      <!-- <input class="endTitleP" value="F6漫时区" name="end" disabled></input> -->
+    </view>
+    <view class="go">
+      <text class="goTitle">出行方式：</text>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <radio class="radio" value="driving" checked>
+          <text>驾车</text>
+        </radio>
+        <radio class="radio" value="transit">
+          <text>公交</text>
+        </radio>
+        <radio class="radio" value="walking">
+          <text>步行</text>
+        </radio>
+      </radio-group>
+    </view>
+    <button class="btn" form-type="submit">开始导航</button>
+  </form>
+</view>
